@@ -16,6 +16,7 @@
 \addbibresource{references.bib} % your .bib file. Change if needed.
 \usepackage[american]{babel} % for language
 \usepackage{lipsum} % For template formatting. Remove when writing.
+\usepackage{import} % for connecting files to main.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%% TITLE PAGE PREAMBLE %%%%%%%
@@ -40,10 +41,9 @@ Department of $\LaTeX$
 %%%%%%% BEGIN MAIN DOCUMENT %%%%%%%
 \begin{document}
     \maketitle
-    
+
 \input{writing/intro}
 \input{writing/methods}
-
 \end{document}
 
 
