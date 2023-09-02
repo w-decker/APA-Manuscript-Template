@@ -1,0 +1,50 @@
+%%%%%%%% DOCUMENT PREAMBLE %%%%%%%%
+\documentclass[man]{apa7}
+% load packages
+\usepackage{graphicx} % for using figures and images
+\usepackage{setspace} % for setting the line space
+\doublespacing
+\usepackage{geometry} % for setting page formates
+    \geometry{
+        a4paper,
+        left=1in,
+        top=1in
+    }
+\usepackage{lineno} % for numbering the lines
+\linenumbers
+\usepackage[style=apa,backend=biber]{biblatex} % for references
+\addbibresource{references.bib} % your .bib file. Change if needed.
+\usepackage[american]{babel} % for language
+\usepackage{lipsum} % For template formatting. Remove when writing.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% TITLE PAGE PREAMBLE %%%%%%%
+\shorttitle{Sample Short title}
+\title{Sample Regular Long Title}
+% \author{Your Name} % for 1 author
+\authorsnames{Author One, Author Two} % for 2 authors
+\affiliation{Department of $\LaTeX$} % for 1 affiliation
+% \authorsaffiliatoins{{Department of $\LaTeX$}, {Department of Psychology}} % for multiple affiliations
+\authornote{
+    \addORCIDlink{Your Name}{0009-0000-0000-0000}
+    
+All correspondence concerning this article should be addressed to Your Name,
+Department of $\LaTeX$
+}
+\abstract{
+\lipsum[1]
+}
+\keywords{KW1, KW2, ...}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%% BEGIN MAIN DOCUMENT %%%%%%%
+\begin{document}
+    \maketitle
+    
+\input{writing/intro}
+\input{writing/methods}
+
+\end{document}
+
+
+
